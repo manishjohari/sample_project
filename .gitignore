@@ -1,0 +1,10 @@
+/.bundle
+/log/*
+!/log/.keep
+/tmp
+dump.rdb
+/public/system
+/public/assets
+.rvmrc
+.DS_Store
+

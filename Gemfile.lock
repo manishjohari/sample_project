@@ -60,6 +60,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.10)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.7)
@@ -181,6 +182,7 @@ DEPENDENCIES
   cancan (= 1.6.10)
   coffee-rails (~> 4.1.0)
   devise
+  devise-bootstrap-views
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)

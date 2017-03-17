@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'user_secrets#index'
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
   }
 
 

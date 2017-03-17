@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, authentication_keys: [:login]
 
   # validates :email, presence: true, uniqueness: true
-  # validates :username, presence: true, uniqueness: true
+  validates :username, presence: true, uniqueness: {case_sensitive: false}
   validate :validate_username
 
   has_one :user_secret
@@ -33,6 +33,7 @@ class User < ActiveRecord::Base
   private
 
   before_save do 
-    email = self.email.downcase
+    email = self.email.downcase if self.email
+    username = self.username.downcase if self.username
   end
 end
